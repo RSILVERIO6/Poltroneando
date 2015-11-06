@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  genero: 1
+  filme: 1
+
+two:
+  genero: 1
+  filme: 1

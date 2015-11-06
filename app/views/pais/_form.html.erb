@@ -1,0 +1,21 @@
+<%= form_for(@pai) do |f| %>
+  <% if @pai.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pai.errors.count, "error") %> prohibited this pai from being saved:</h2>
+
+      <ul>
+      <% @pai.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

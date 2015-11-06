@@ -1,0 +1,25 @@
+<%= form_for(@generos_filme) do |f| %>
+  <% if @generos_filme.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@generos_filme.errors.count, "error") %> prohibited this generos_filme from being saved:</h2>
+
+      <ul>
+      <% @generos_filme.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :genero %><br>
+    <%= f.number_field :genero %>
+  </div>
+  <div class="field">
+    <%= f.label :filme %><br>
+    <%= f.number_field :filme %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @generos_filme.genero %>
+</p>
+
+<p>
+  <strong>Filme:</strong>
+  <%= @generos_filme.filme %>
+</p>
+
+<%= link_to 'Edit', edit_generos_filme_path(@generos_filme) %> |
+<%= link_to 'Back', generos_filmes_path %>
